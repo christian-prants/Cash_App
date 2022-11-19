@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #161817;
+}

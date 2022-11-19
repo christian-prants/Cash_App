@@ -1,0 +1,131 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #fff;
+}
+
+.barra_sup {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: solid;
+}
+
+.barra_sup button {
+    margin-right: 5rem;
+    width: 25rem;
+    height: 5rem;
+
+    border-radius: 5rem;
+    align-self: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer; 
+    background-color: #19180a;
+    border: 1px solid #19180a;
+    color:#fff;
+}
+
+.barra_sup button:hover,
+.barra_sup button:active {
+    background-color: #312f2f;
+    border-color: #312f2f;
+    color:#fff;
+}
+
+.barra_sup h1 {
+    display: inline;
+    align-self: center;
+    margin-left: 70rem;
+    margin-right: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.barra_sup img {
+    height: 90%;
+    margin-left: 3rem;
+    align-self: center;
+}
+
+.filtro {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding-left: 40rem;
+    padding-right: 40rem;
+    padding-bottom: .5rem;
+    background-color: #000;
+    color: #fff;
+}  
+
+.filtro input {
+    margin-left: 10rem;
+    margin-top: 0rem;
+    height: 15rem;
+    width: 2.9rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.filtro label {
+    margin-left: .5rem;
+    font-size: 1.7rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.tabela {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+    background-color: #fff;
+}
+
+.tabela h1 {
+    margin:2rem;
+    align-self: center;
+    font-weight: regular;
+    color: #000;
+    
+}
+
+table {
+    width:100%;
+}
+
+th {
+    height: 1rem;
+    padding: 1%;
+    background-color: #e1e1e1;
+
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+td {
+    height: 1rem;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    background-color: #f6f6f6;
+}
