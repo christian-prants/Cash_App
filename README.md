@@ -52,7 +52,3 @@ No Windows PowerShell ou qualquer outro terminal que você utilize, siga esses p
 5. Rodar o comando "npm start";
 
 Se em algum momento o terminal retornar que a porta a ser utilizada, já está em uso, apenas apertar Y/YES para usar a porta sugerida.
-
-###
-
-Todas as validações necessárias no desafio são realizadas tanto no Back-End como no Front-End.
