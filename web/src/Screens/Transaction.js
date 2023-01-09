@@ -6,8 +6,8 @@ import { AuthContext } from "../Context/Auth";
 import Card from '../Components/UI/Card';
 import styles from './Transaction.module.css';
     
-const Transaction = ({ setIsOpen }) => {
-    const { user, updateBalance, balance } = useContext(AuthContext);
+const Transaction = ({ setMakeTrans, setIsOpen }) => {
+    const { user, updateBalance, openMenu } = useContext(AuthContext);
     const [inputUser, setInputUser] = useState('');
     const [inputCash, setInputCash] = useState(0);
 
@@ -16,6 +16,10 @@ const Transaction = ({ setIsOpen }) => {
     }
     const changeCash= (event) => {
         setInputCash(event.target.value);
+    }
+    const handleClose = () => {
+        setMakeTrans(false);
+        setIsOpen(openMenu(false));        
     }
 
     const handleTransfer = async (event) => {
@@ -31,7 +35,7 @@ const Transaction = ({ setIsOpen }) => {
 
             if (response.data.message === 'OK') {
                 const newBalance = await getAccountBalance(user);               
-                updateBalance(newBalance.data.account.balance)
+                updateBalance(newBalance.data.account.balance, user)
                 alert('Transferência realizada com sucesso!')
             }
         } catch (error) {
@@ -53,10 +57,10 @@ const Transaction = ({ setIsOpen }) => {
 
     return (
         <>            
-            <div className={styles.bg} onClick={() => {setIsOpen(false)}} />
+            <div className={styles.bg} onClick = { handleClose } />
             <div className={styles.centered}>
                 <Card className={styles.transaction}> 
-                    <button className={styles.fecharBtn} onClick={() => {setIsOpen(false)}}>X</button>
+                    <button className={styles.fecharBtn} onClick = { handleClose } >X</button>
                     <h1>Transferir Saldo</h1>
                     <form onSubmit={ handleTransfer }>
                         

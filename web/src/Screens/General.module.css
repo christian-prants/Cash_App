@@ -1,0 +1,55 @@
+.general {
+    display: flex;
+    position: relative;
+    margin: 3.5rem;
+    justify-content: space-between;
+}
+
+.general h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3C4048;
+}
+
+.general p {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.boxes {
+    width: 30%;
+    height: 10rem;
+    border: .3rem solid #19180a;    
+
+    padding-left: 3rem;
+    gap: 2rem;
+
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon {
+    width: 3rem;
+    font-size: 3rem;
+}
+
+.debit p {
+    color: red; 
+}
+
+.credit p {
+    color: #74e392; 
+}
+
+.chart {
+    display: flex;
+    align-self: center;
+
+    width: 95vw;
+    height: 50%;
+    border: 1px solid #000;
+    overflow: auto;
+    margin: 0rem 3rem 1rem 3rem;
+}
