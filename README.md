@@ -1,6 +1,6 @@
-# NG-Cash
+# Cash App
 
-Projeto feito como um desafio para uma vaga de desenvolvimento, a aplicação deve permitir que um usuário se cadastre apenas com username e password, e efetue transações de valores da sua conta para a de outros usuários e também consulte as transações em que participa.
+Projeto feito como um desafio de integração back e front, a aplicação deve permitir que um usuário se cadastre apenas com username e password, e efetue transações de valores da sua conta para a de outros usuários e também consulte as transações em que participa.
 
 ## Principais tecnologias
 
@@ -14,6 +14,32 @@ Front-End:
 
 - React.js
 - CSS3
+
+## Funcionamento
+
+### Criação de conta
+
+<p display="inline">
+  <img src="videos/criar-conta.gif" height=200 />
+</p>
+
+### Login e transferêcia
+
+<p display="inline">
+  <img src="videos/login-e-transferência.gif" height=200 />
+</p>
+
+### Gráfico
+
+<p display="inline">
+  <img src="videos/gráfico.gif" height=200 />
+</p>
+
+### Filtro e logout
+
+<p display="inline">
+  <img src="videos/filtro-e-logout.gif" height=200 />
+</p>
 
 ## Como executar
 
